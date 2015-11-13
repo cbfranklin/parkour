@@ -1,0 +1,6 @@
+csv
+json
+node_modules
+public/bower_components
+npm_debug.log
+.jshintrc
