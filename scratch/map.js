@@ -1,5 +1,6 @@
 var segment = {},
-    path;
+    path,
+    poly;
 
 $(function() {
     $('#doIt').on('click', doIt);
@@ -24,7 +25,7 @@ function doIt() {
             //zoom: 17
         };
         var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-        var poly = new google.maps.Polyline({
+        poly = new google.maps.Polyline({
             map: map
         });
         path = new google.maps.MVCArray();
@@ -51,6 +52,8 @@ function doIt() {
                 poly.setPath(path);
             }
         });
+
+        console.log(poly.getPath().getArray().toString())
 
     });
 
