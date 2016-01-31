@@ -1,0 +1,1 @@
+/(\d){1,2}(:)?(\d){0,2}(A|P){1}M TO (\d){1,2}(:)?(\d){0,2}(A|P){1}M (MON|TUES|WED|THURS|FRI|SAT|SUN)/
