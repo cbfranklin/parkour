@@ -1,3 +1,6 @@
+//old and busted. skipping JSON, and sign/location nesting.
+//going directly to mongo from CSV now in CSVsToJSON.js
+
 //var express = require('express');
 //var app = express();
 //var mongo = require('mongoskin');

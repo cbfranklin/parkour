@@ -23,6 +23,7 @@
     "mongoskin": "^2.0.3",
     "polyline": "^0.2.0",
     "underscore": "^1.8.3",
-    "util": "^0.10.3"
+    "util": "^0.10.3",
+    "csvtojson": "~0.5.2"
   }
 }
