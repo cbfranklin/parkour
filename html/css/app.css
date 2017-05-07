@@ -1,0 +1,103 @@
+#map {
+    width: 100%;
+    height: 100vh;
+    position:fixed;
+}
+
+.icon-day {
+    width: 20px!important;
+    height: 20px!important;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+.icon-day:after {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.icon-day {
+    background: grey;
+}
+
+
+.icon-day.monday {
+    background-color: red;
+}
+
+.icon-day.monday:after {
+    content: 'M'
+}
+
+.icon-day.tuesday {
+    background-color: orange;
+}
+
+.icon-day.tuesday:after {
+    content: 'Tu'
+}
+
+.icon-day.wednesday {
+    background-color: yellow;
+}
+
+.icon-day.wednesday:after {
+    content: 'W'
+}
+
+.icon-day.thursday {
+    background-color: green;
+}
+
+.icon-day.thursday:after {
+    content: 'Th'
+}
+
+.icon-day.friday {
+    background-color: blue;
+}
+
+.icon-day.friday:after {
+    content: 'F'
+}
+
+.icon-day.saturday {
+    background-color: indigo;
+}
+
+.icon-day.saturday:after {
+    content: 'Sa'
+}
+
+.icon-day.sunday {
+    background-color: fuchsia;
+}
+
+.icon-day.sunday:after {
+    content: 'Su'
+}
+
+.icon-day.monday_thursday {
+    background-image: linear-gradient(90deg, red 50%, green 50%);
+}
+
+.icon-day.tuesday_friday {
+    background-image: linear-gradient(90deg, orange 50%, blue 50%);
+}
+
+.icon-day.tuesday_thursday {
+    background-image: linear-gradient(90deg, orange 50%, green 50%);
+}
+
+.icon-day.monday_wednesday {
+    background-image: linear-gradient(90deg, red 50%, yellow 50%);
+}
+
+.icon-day.monday_wednesday_friday {
+    background-image: linear-gradient(90deg, red 33%, yellow 33%, blue 33%);
+}
+.icon-day.tuesday_thursday_saturday {
+    background-image: linear-gradient(90deg, orange 33%, green 33%, indigo 33%);
+}

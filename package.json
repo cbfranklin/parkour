@@ -14,6 +14,8 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/connor3ep/parkour#readme",
   "dependencies": {
+    "bunyan": "^1.8.10",
+    "csvtojson": "~0.5.2",
     "es6-promise": "^3.0.2",
     "express": "^4.13.3",
     "fs": "0.0.2",
@@ -23,7 +25,6 @@
     "mongoskin": "^2.0.3",
     "polyline": "^0.2.0",
     "underscore": "^1.8.3",
-    "util": "^0.10.3",
-    "csvtojson": "~0.5.2"
+    "util": "^0.10.3"
   }
 }

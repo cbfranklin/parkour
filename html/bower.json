@@ -1,0 +1,23 @@
+{
+  "name": "parkour",
+  "authors": [
+    "Connor <cononrbfranklin@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "leaflet-ajax": "^2.1.0",
+    "leaflet.loading": "Leaflet.loading#^0.1.24",
+    "bootstrap": "^3.3.7"
+  }
+}

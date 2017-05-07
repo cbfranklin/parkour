@@ -37,6 +37,6 @@ signsConverter.fromFile("csv/signs.CSV", function(err, result) {
     db.createCollection('signs')
     db.collection('signs').insert(result, function(){
         if(err) throw err;
-        if(result) console.log('signs added')
+        if(result) console.log('signs added'); return;
     })
 });
