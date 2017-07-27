@@ -31,6 +31,35 @@ app.get('/signs', function(req, res) {
     });
 })
 
+app.get('/lines', function(req, res) {
+    // var southWestLng = parseFloat(req.query.southWestLng);
+    // var southWestLat = parseFloat(req.query.southWestLat);
+    // var northEastLng = parseFloat(req.query.northEastLng);
+    // var northEastLat = parseFloat(req.query.northEastLat);
+    // console.log(southWestLng, southWestLat, northEastLng, northEastLat)
+    db.collection('locations').find({
+        'loc': {
+            // '$geoIntersects': {
+            //     '$box': [
+            //         [southWestLng, southWestLat],
+            //         [northEastLng, northEastLat]
+            //     ]
+            // }
+            $exists : true
+        }
+        //  'borough': 'K'
+    }).toArray(function(err, items) {
+        if (items){
+            console.log(items)
+            res.json(items.slice(1,100))
+        }
+        else{
+            console.log('no items')
+        }
+        db.close();
+    });
+})
+
 
 app.listen(3001, function() {
     console.log('Listening on Port 3001')
